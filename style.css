@@ -1,0 +1,118 @@
+
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e91e63,#ffc107);
+    clip-path: circle(22% at 30% 20%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(22, 162, 255),#d403b8);
+    clip-path: circle(22% at 70% 90%);
+}
+
+#cal{
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    margin-top: 300px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    
+}
+
+.text{
+   display: flex;
+   justify-content: center;
+   
+
+}
+#input{
+    width: 350px;
+    height: 100px;
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    padding-left:10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: end;
+    
+}
+
+.num{
+    display: flex;
+    
+}
+
+.button{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 20px;
+    width: 50px;
+    display: grid;
+   color: white;
+   cursor: pointer;
+   border-color: 2px solid #e91e63;
+   text-align: center;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+   border-right: 1px solid rgba(255, 255, 255, 0.05);
+   transition: 0.5s;
+}
+
+.button:hover{
+    transition: 0s;
+    background-color: rgba(255, 255, 255, 0.09);
+
+}
+
+.button:active{
+    background: #2fff5c;
+    color: black;
+}
+#zip{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 20px;
+    width: 50px;
+    display: grid;
+       color: white;
+   cursor: pointer;
+   border-color: 2px solid #e91e63;
+   text-align: center;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+   border-right: 1px solid rgba(255, 255, 255, 0.05);
+   transition: 0.5s;
+}
+
+#zip:hover{
+    transition: 0s;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+#zip:active{
+    background-color: #f00202;
+    color: black;
+}
+
+
